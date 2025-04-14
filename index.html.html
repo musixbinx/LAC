@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAC - Recrutement</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1b1b1b;
+            color: #e0e0e0;
+            margin: 0;
+        }
+        header, footer {
+            background-color: #2e3b2e;
+            padding: 20px;
+            text-align: center;
+            color: #aaffaa;
+        }
+        nav {
+            background-color: #334433;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #aaffaa;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 30px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+        input, textarea {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: none;
+        }
+        button {
+            background-color: #4b5d4b;
+            padding: 12px;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #5f7f5f;
+        }
+        h2 {
+            color: #aaffaa;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Recrutement - LAC</h1>
+    </header>
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="presentation.html">Présentation</a>
+        <a href="recrutement.html">Recrutement</a>
+    </nav>
+
+    <section>
+        <h2>Formulaire de Candidature</h2>
+        <form action="https://formsubmit.co/xxkingetsuxx@gmail.com" method="POST">
+            <!-- Sujet du formulaire -->
+            <input type="hidden" name="_subject" value="Nouvelle Candidature LAC!">
+            <!-- Champ de pseudo Roblox -->
+            <input type="text" name="pseudo" placeholder="Pseudo Roblox" required>
+            <!-- Champ d'âge -->
+            <input type="text" name="age" placeholder="Âge (facultatif)">
+            <!-- Champ de motivation -->
+            <textarea name="motivation" rows="4" placeholder="Pourquoi veux-tu nous rejoindre ?" required></textarea>
+            <!-- Champ de disponibilités -->
+            <input type="text" name="disponibilite" placeholder="Disponibilités" required>
+            <!-- Bouton d'envoi -->
+            <button type="submit">Envoyer</button>
+        </form>
+        <p style="color:#aaa; font-size: 0.9em; margin-top: 10px;">⚠️ Les réponses seront envoyées par mail.</p>
+    </section>
+
+    <footer>
+        &copy; 2025 LAC - Légion Anti-Crim. Tous droits réservés.
+    </footer>
+</body>
+</html>
